@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  code {
+    @apply font-mono text-sm bg-white text-orange-400 p-1
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-black
+  }
+
+  main {
+    @apply mx-auto max-w-5xl ring-1 bg-white ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10
+  }
+
+  a {
+    @apply text-blue-400 hover:text-blue-500
+  }
+
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-5xl ring-1 bg-white  xl:max-w-7xl min-h-screen p-10
+  }
+}
