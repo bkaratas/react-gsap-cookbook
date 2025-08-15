@@ -69,18 +69,18 @@ const GsapFromTo = () => {
             GSAP FromTo
           </span>
         </h1>
-        <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-          <code className="px-1.5 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800/80">gsap.fromTo()</code>{" "}
+        <p className="mt-3 text-zinc-600 ">
+          <code className="px-1.5 py-0.5 rounded bg-zinc-200 ">gsap.fromTo()</code>{" "}
           yöntemi, öğeyi belirttiğiniz <em>başlangıç (from)</em> değerlerinden
           yine belirttiğiniz <em>hedef (to)</em> değerlerine animasyonlar.
         </p>
-        <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-1 text-zinc-600 ">
           <strong>from</strong> sadece başlangıcı, <strong>to</strong> sadece hedefi
           tanımlar; <strong>fromTo</strong> ise ikisini birden kesin şekilde
           belirlemenizi sağlar.
           {" "}Ayrıntılar:{" "}
           <a
-            className="text-rose-600 dark:text-rose-400 underline-offset-4 hover:underline"
+            className="text-rose-600  underline-offset-4 hover:underline"
             href="https://greensock.com/docs/v3/GSAP/gsap.fromTo()"
             target="_blank"
             rel="noreferrer noopener nofollow"
@@ -93,10 +93,13 @@ const GsapFromTo = () => {
       {/* İki sütunlu düzen */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* DEMO */}
-        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
-          <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Canlı Demo</h2>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+        <div className="rounded-2xl border border-zinc-200  bg-white  shadow-sm">
+          <div className="p-5 border-b border-zinc-100">
+            <h2 className="text-lg font-semibold text-zinc-900 ">
+  Canlı Demo
+</h2>
+
+            <p className="mt-1 text-sm text-zinc-600 ">
               Kutu <code>fromTo()</code> ile <em>x:0, rotation:0, r:10%</em>’dan
               <em> x:250, rotation:360, r:100%</em>’a gider; repeat+yoyo ile
               ileri-geri oynar.
@@ -107,14 +110,18 @@ const GsapFromTo = () => {
             {/* Kontroller */}
              <div className="sm:flex items-center gap-3 mb-6">
               <button
-                onClick={togglePlay}
-                className="px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-sm"
-              >
-                Oynat / Duraklat
-              </button>
+  className="px-3 py-1.5 rounded-lg text-sm font-medium
+             bg-zinc-100 text-zinc-800 hover:bg-zinc-200
+            
+             border border-zinc-300
+             focus:outline-none focus:ring-2 focus:ring-blue-500
+              ">
+  Oynat / Duraklat
+</button>
+
               <button
                 onClick={restart}
-                className="ms-2 sm:ms-0 px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-sm"
+                className="ms-2 sm:ms-0 px-3 py-1.5 rounded-lg border border-zinc-300  hover:bg-zinc-50  text-sm"
               >
                 Yeniden Başlat
               </button>
@@ -137,7 +144,7 @@ const GsapFromTo = () => {
             </div>
 
             {/* Sahne */}
-            <div className="relative h-48 rounded-xl bg-gradient-to-br from-zinc-50 via-zinc-100 to-zinc-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-zinc-800 flex items-center">
+            <div className="relative h-48 rounded-xl bg-gradient-to-br from-zinc-50 via-zinc-100 to-zinc-50   border border-zinc-200  flex items-center">
               <div
                 id="red-box"
                 className="w-20 h-20 rounded-[10%] bg-rose-500 shadow-lg will-change-transform"
@@ -148,26 +155,26 @@ const GsapFromTo = () => {
         </div>
 
         {/* KOD BLOĞU */}
-        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
-          <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Kullanılan GSAP Kodu</h2>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+        <div className="rounded-2xl border border-zinc-200  bg-white  shadow-sm">
+          <div className="p-5 border-b border-zinc-100 ">
+            <h2 className="text-lg font-semibold text-zinc-900 ">Kullanılan GSAP Kodu</h2>
+            <p className="mt-1 text-sm text-zinc-600 ">
               Satır sonu yorumları her özelliğin ne yaptığını açıklar.
             </p>
           </div>
 
-          <div className="m-4 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800">
-            <div className="px-4 py-2 text-xs text-zinc-500 bg-zinc-50 dark:bg-zinc-950">
+          <div className="m-4 rounded-xl overflow-hidden border border-zinc-200 ">
+            <div className="px-4 py-2 text-xs text-zinc-500 bg-zinc-50 ">
               index.jsx
             </div>
-            <pre className="p-4 overflow-auto bg-zinc-50 dark:bg-zinc-950 text-sm leading-6">
+            <pre className="p-4 overflow-auto bg-zinc-50  text-sm leading-6">
               <code className="block text-[13px]">
                 {gsapSnippet}
               </code>
             </pre>
           </div>
 
-          <div className="px-5 pb-5 text-sm text-zinc-600 dark:text-zinc-400">
+          <div className="px-5 pb-5 text-sm text-zinc-600 ">
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 <strong>fromTo(fromVars, toVars)</strong>: başlangıç ve hedefi birlikte tanımlarsın.

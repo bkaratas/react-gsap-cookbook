@@ -92,7 +92,10 @@ boxes.forEach((box, i) => {
         {/* DEMO */}
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
           <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Canlı Demo</h2>
+            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+  Canlı Demo
+</h2>
+
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
               Aşağı kaydır; kutular görünür oldukça animasyonları tetiklenir.
             </p>
@@ -130,7 +133,7 @@ boxes.forEach((box, i) => {
         {/* KOD BLOĞU */}
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
           <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Kullanılan GSAP Kodu</h2>
+            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Kullanılan GSAP Kodu</h2>
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
               Satır sonu yorumları her özelliğin ne yaptığını açıklar.
             </p>

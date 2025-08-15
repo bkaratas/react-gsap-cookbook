@@ -10,11 +10,11 @@ export default function BackButton({
 
   const classes = `
     inline-flex items-center gap-2 rounded-lg border
-    border-zinc-300 dark:border-zinc-700
-    bg-white/80 dark:bg-zinc-900/80
+    border-zinc-300 
+    bg-white/80 
     px-3 py-1.5 text-sm font-medium
-    text-zinc-700 dark:text-zinc-200
-    shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-800
+    text-zinc-700 
+    shadow-sm hover:bg-zinc-50 
     transition-colors ${className}
   `;
 

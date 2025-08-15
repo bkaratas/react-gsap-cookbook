@@ -89,7 +89,10 @@ const GsapStagger = () => {
         {/* DEMO */}
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
           <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Canlı Demo</h2>
+            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+  Canlı Demo
+</h2>
+
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
               Ortadan dışa doğru dalga: <code>from: "center"</code>,{" "}
               <code>amount: 1.5</code>, <code>grid: [1, 7]</code>.
@@ -99,12 +102,16 @@ const GsapStagger = () => {
           <div className="p-6">
             {/* Kontroller */}
             <div className="sm:flex items-center gap-3 mb-6">
-              <button
-                onClick={togglePlay}
-                className="px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-sm"
-              >
-                Oynat / Duraklat
-              </button>
+             <button
+  className="px-3 py-1.5 rounded-lg text-sm font-medium
+             bg-zinc-100 text-zinc-800 hover:bg-zinc-200
+             dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700
+             border border-zinc-300 dark:border-zinc-700
+             focus:outline-none focus:ring-2 focus:ring-blue-500
+             dark:focus:ring-offset-2 dark:focus:ring-offset-zinc-900">
+  Oynat / Duraklat
+</button>
+
               <button
                 onClick={restart}
                 className="ms-2 sm:ms-0 px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-sm"
@@ -147,7 +154,7 @@ const GsapStagger = () => {
         {/* KOD BLOĞU */}
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm">
           <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-            <h2 className="text-lg font-semibold">Kullanılan GSAP Kodu</h2>
+            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Kullanılan GSAP Kodu</h2>
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
               Satır sonu yorumları her özelliğin ne yaptığını açıklar.
             </p>
